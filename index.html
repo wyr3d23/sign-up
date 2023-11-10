@@ -15,7 +15,6 @@
                 <img alt="viking svg file" src="images/viking.svg">
                 <h1 class="title">ODIN</h1>
             </div>
-            <footer class="footer">Wyr3d</footer>
         </section>
         <section class="content">
             <div class="header-para">
@@ -26,26 +25,26 @@
             <div class="form-grid">
                 <h3>Let's do this!</h3>
                 <fieldset class="forms">
-                    <label for="first_name">First Name<span aria-label="required">*</span></label>
-                    <input type="text" id="first_name" name="first_name" placeholder="Jack"
-                        required>
+                    <div class="left-form">
+                        <label for="first_name"><span aria-label="required">*</span> First Name</label>
+                        <input type="text" id="first_name" name="first_name" required>
 
-                    <label for="last_name">Last Name<span aria-label="required">*</span></label>
-                    <input type="text" id="last_name" name="last_name" placeholder="Frost" required>
+                        <label for="email"><span aria-label="required">*</span> Email</label>
+                        <input type="email" id="email" name="email" required>
 
-                    <label>Email<span aria-label="required">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="abc123@abc123.com"
-                           required>
+                        <label for="password"><span aria-label="required">*</span> Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="right-form">
+                        <label for="last_name"><span aria-label="required">*</span> Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
 
-                    <label>Phone Number</label>
-                    <input maxlength="10" type="number" id="phone_number" name="phone_number"
-                           placeholder="123-456-7890">
+                        <label for="phone_number">Phone Number</label>
+                        <input maxlength="12" type="text" id="phone_number" name="phone_number">
 
-                    <label>Password<span aria-label="required">*</span></label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label>Confirm Password<span aria-label="required">*</span></label>
-                    <input type="password" id="confirm_password" name="password_confirm" required>
+                        <label for="confirm_password"><span aria-label="required">*</span> Confirm Password</label>
+                        <input type="password" id="confirm_password" name="password_confirm" required>
+                    </div>
                 </fieldset>
             </div>
             <div class="accounts">
