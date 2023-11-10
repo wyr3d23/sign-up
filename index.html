@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Odin Account Sign-up </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <main class="main-container">
+
+        <section class="side-panel">
+            <img alt="placeholder for image" src="images/owl.jpeg">
+            <div class="logo">
+                <img alt="viking svg file" src="images/viking.svg">
+                <h1 class="title">ODIN</h1>
+            </div>
+            <footer class="footer">Wyr3d</footer>
+        </section>
+        <section class="content">
+            <div class="header-para">
+                <p>This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="form-grid">
+                <h3>Let's do this!</h3>
+                <fieldset class="forms">
+                    <label for="first_name">First Name<span aria-label="required">*</span></label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Jack"
+                        required>
+
+                    <label for="last_name">Last Name<span aria-label="required">*</span></label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Frost" required>
+
+                    <label>Email<span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="abc123@abc123.com"
+                           required>
+
+                    <label>Phone Number</label>
+                    <input maxlength="10" type="number" id="phone_number" name="phone_number"
+                           placeholder="123-456-7890">
+
+                    <label>Password<span aria-label="required">*</span></label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label>Confirm Password<span aria-label="required">*</span></label>
+                    <input type="password" id="confirm_password" name="password_confirm" required>
+                </fieldset>
+            </div>
+            <div class="accounts">
+                <button type="submit" class="create-acc">Create Account</button>
+
+                <p class="log-in">Already have an account? <a href="#"/>Log In</p>
+            </div>
+        </section>
+    </main>
 </body>
+<script src="main.js"></script>
 </html>

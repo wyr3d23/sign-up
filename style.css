@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner&display=swap');
+
+.main-container {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    font-family: "Papyrus", SansSerif;
+}
+
+
+/* left side panel */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-63%, -50%);
+    color: white;
+    font-size: 50px;
+    background-color: rgb(50, 50, 50, 0.5);
+    width: 40%;
+
+}
+
+.logo img {
+    width: 25%;
+    height: 25%;
+    overflow: visible;
+    transform: translate(25%, 45%);
+
+}
+
+.logo h1 {
+    text-align: center;
+    transform: translate(15%, 20%);
+}
+
+img {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 0;
+}
+
+.side-panel {
+    display: flex;
+    max-width: 50%;
+}
+
+/* Right side panel */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: absolute;
+    right: 0;
+    flex-basis: 100%;
+}
+
+.header-para {
+    background-color: #f8f7f7;
+    height: 30%;
+}
+
+.content .header-para p:first-child{
+    margin-top: 150px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.content .header-para p:last-child{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.content .form-grid h3{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
