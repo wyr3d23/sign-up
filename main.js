@@ -151,8 +151,22 @@ inputs.addEventListener('input', function(e) {
     }
 });
 
+const debounce = (fn, delay = 500) => {
+    let timeoutId;
+    return (...args) => {
+        // cancel previous timer
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        // setup new timer
+        timeoutId = setTimeout(() => {
+            fn.apply(null, args)
+        }, delay);
+    };
+};
 
-document.querySelector('.create-acc').addEventListener("click", function(e) {
+
+document.querySelector('.create-acc').addEventListener("click", debounce(function(e) {
     // prevent the form from submitting
     e.preventDefault();
 
@@ -175,4 +189,4 @@ document.querySelector('.create-acc').addEventListener("click", function(e) {
     } else {
         alert('Form incomplete');
     }
-});
+}));
