@@ -1,7 +1,6 @@
 const usersName = document.getElementById('first_name');
 const usersLastName = document.getElementById('last_name');
 const usersEmail = document.getElementById('email');
-const usersPhoneNum = document.getElementById('phone_number');
 
 const userPw = document.getElementById('password');
 const pwConfirm = document.getElementById('confirm_password');
@@ -11,7 +10,7 @@ const inputs = document.querySelector('.forms');
 const isRequired = value => value !== '';
 const isBetween = (length, min, max) => !(length < min || length > max);
 const isEmailValid = (email) => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 };
 
@@ -32,7 +31,7 @@ const showError = (input, message) => {
     error.textContent = message;
 }
 
-const showSuccess = (input, message) => {
+const showSuccess = (input) => {
     // get form field element
     const formField = input.parentElement;
     // remove the error class
@@ -98,6 +97,7 @@ const checkEmail = () => {
     return valid;
 }
 
+
 const checkPass = () => {
 
     let valid = false;
@@ -152,7 +152,7 @@ inputs.addEventListener('input', function(e) {
 });
 
 
-document.querySelector('.create-acc').addEventListener("submit", function(e) {
+document.querySelector('.create-acc').addEventListener("click", function(e) {
     // prevent the form from submitting
     e.preventDefault();
 
@@ -171,6 +171,8 @@ document.querySelector('.create-acc').addEventListener("submit", function(e) {
 
     // submit if form is valid
     if (isFormValid) {
-
+        alert('Form submitted, check your email');
+    } else {
+        alert('Form incomplete');
     }
 });
